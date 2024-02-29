@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the webpage -->
     <title>Tutor Home</title>
+    <!-- Link to external stylesheet -->
     <link rel="stylesheet" href="styles_tutor.css">
 </head>
 <body>
+    <!-- Header section -->
     <div class="header">
         <h1>Tutor Dashboard</h1>
     </div>
 
+    <!-- Navigation bar section -->
     <div class="navbar">
+        <!-- Menu button to toggle sidebar -->
         <div class="menu-btn" onclick="toggleSidebar()">Menu</div>
+        <!-- Profile section with profile image and link to tutor info -->
         <div class="profile">
             <img src="psna_logo.png" alt="Profile Image">
             <a href="tutor_info.html">Tutor Name</a>
         </div>
     </div>
 
+    <!-- Main content section -->
     <div class="main-content">
+        <!-- Sidebar section -->
         <div class="sidebar" id="sidebar">
             <ul>
+                <!-- Sidebar menu items -->
                 <li><a href="tutor_home.html">Home</a></li>
                 <li><a href="classes_home.html">Classes or Courses</a></li>
             </ul>
         </div>
 
+        <!-- Content section -->
         <div class="content">
+            <!-- Welcome message for the tutor -->
             <div class="welcome-message">
                 <h2>Welcome, Tutor!</h2>
                 <p>This page, meticulously crafted by the talented students of the ADS department at PSNA College, welcomes you with open arms as you embark on your tutoring journey, offering a plethora of features accessible through the sidebar for your convenience and enhancement of your tutoring experience.</p>
@@ -35,6 +47,7 @@
         </div>
     </div>
 
+    <!-- Script tag to link external JavaScript file -->
     <script src="scripts_tutor.js"></script>
 </body>
 </html>
