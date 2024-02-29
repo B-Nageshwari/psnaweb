@@ -1,0 +1,2 @@
+tutor_home -> tutor_info ( a small page for updating the personal info)
+tutor_home -> If menu button clicked -> classes or courses -> class 1 leads to tutorclass1 , class2 leads to tutorclass2 and similar
