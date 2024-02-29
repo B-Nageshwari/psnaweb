@@ -1,0 +1,6 @@
+{
+    "mangodb_conection_string":"mongodb+srv://joshika:joshikas@joshika.aqnvxat.mongodb.net/",
+    "mongodb_database":"user",
+    "secret_key": "Vr4d5lvRh5j6FJ5Cmbzm"
+}
+
