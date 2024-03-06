@@ -1,0 +1,150 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('imgg.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    min-height: 100vh; /* Ensure the background covers the entire viewport */
+}
+
+#navbar {
+    background-color: #222;
+    color: #fff;
+    padding: 10px;
+    text-align: left;
+    position: fixed; /* Set position to fixed */
+    width: 100%; /* Take full width of the viewport */
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar h2 {
+    margin: 0;
+    display: inline-block;
+    text-align: center;
+    flex-grow: 1;
+}
+
+#menuBtn {
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#profile-img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+#navbar-links {
+    display: flex;
+    align-items: center;
+    margin-right: 5%;
+}
+
+#navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+#plus-icon {
+    font-size: 28px;
+}
+
+#wrapper {
+    display: flex;
+    margin-top: 60px; /* Adjust top margin to accommodate navbar */
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    transition: 0.5s;
+    overflow-y: auto;
+    height: calc(100vh - 60px); /* Adjust height to fill remaining viewport */
+    position: fixed; /* Set position to fixed */
+    top: 60px; /* Position below navbar */
+    left: 0; /* Align to the left */
+    z-index: 1;
+}
+
+#sidebar-links {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#sidebar a {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+#sidebar a i {
+    margin-right: 10px;
+}
+
+#content {
+    flex-grow: 1;
+    padding: 35px;
+    margin-left: 270px; /* Adjusted to create space between sidebar and content */
+    transition: margin-left 0.5s;
+    z-index: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.big-block {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 100px;
+    flex-grow: 2; /* Takes twice the space of smaller blocks */
+    min-width: 750px; /* Adjust size as needed */
+}
+
+.rectangle-block {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    min-width: 750px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.rectangle-block h3 {
+    margin-top: 0;
+    color: #fff;
+}
+
+.rectangle-block p {
+    color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 200px;
+    }
+
+    #content {
+        margin-left: 220px;
+    }
+}
